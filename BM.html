@@ -4,13 +4,13 @@
     <title>Triggering Flow...</title>
   </head>
   <body>
-    <h2>Committing changes to master salesreturn database</h2>
+    <h2>Sending periodic mails to Branch Manager</h2>
     <script>
       fetch("https://prod-00.centralindia.logic.azure.com:443/workflows/00ededf4865a466b98972a105c33afc6/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=uBqy9beprMO1XIOGjsH0yV_95Q6ahBMpB5pIaQsdtIg", {
         method: "POST"
       })
       .then(response => {
-        document.body.innerHTML += "<p>✅ Updates successful!</p>";
+        document.body.innerHTML += "<p>✅ Mail will be sent soon!</p>";
       })
       .catch(error => {
         document.body.innerHTML += "<p>❌ Error updating.</p>";
